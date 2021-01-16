@@ -27,7 +27,7 @@ export default function Hero() {
             onChange={(event) => setstate(event.target.value)}
             className="bg-white focus:outline-none border-0 px-4 md:px-6 py-3 w-full md:w-1/2"
             value={state}
-            placeholder="Your email addres"
+            placeholder="Your email address"
           />
           <button className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-4 md:px-6 py-3 whitespace-no-wrap">
             Daftar Now
