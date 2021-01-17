@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 
 export default function Hero() {
-  const [state, setstate] = useState(() => "");
-
-  function submit() {
-    window.open(
-      `${process.env.NEXT_PUBLIC_MEMBERPAGE_URL}/register?email=${state}`
-    );
-  }
+  function submit() {}
   return (
     <div className="flex justify-between items-center">
       <div className="w-full md:w-1/2 mt-8 md:mt-0">
@@ -24,9 +18,7 @@ export default function Hero() {
         <form onSubmit={submit} className="flex">
           <input
             type="text"
-            onChange={(event) => setstate(event.target.value)}
             className="bg-white focus:outline-none border-0 px-4 md:px-6 py-3 w-full md:w-1/2"
-            value={state}
             placeholder="Your email address"
           />
           <button className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-4 md:px-6 py-3 whitespace-no-wrap">
