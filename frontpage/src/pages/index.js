@@ -8,6 +8,7 @@ import Header from "src/parts/Header";
 import Hero from "src/parts/Hero";
 import Clients from "src/parts/Clients";
 import ListCourses from "src/parts/ListCourses";
+import ListCategory from "src/parts/ListCategory";
 
 function Home({ data }) {
   return (
@@ -32,6 +33,10 @@ function Home({ data }) {
         <section className="container mx-auto pt-24">
           <ListCourses data={data}></ListCourses>
         </section>
+        <section className="container mx-auto pt-24">
+          <ListCategory></ListCategory>
+        </section>
+        <section className="container mx-auto py-24"></section>
       </main>
     </>
   );

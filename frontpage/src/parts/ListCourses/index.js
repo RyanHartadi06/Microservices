@@ -14,7 +14,7 @@ export default function ListCourses({ data }) {
         <div className="w-auto">
           <Link href="/courses">
             <a className="text-gray-600 hover:underline text-sm">
-              View All Course
+              View All Courses
             </a>
           </Link>
         </div>
