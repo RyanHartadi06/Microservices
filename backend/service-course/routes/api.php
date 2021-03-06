@@ -14,6 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('mentors', 'MentorController@index');
+Route::get('mentors/{id}', 'MentorController@show');
+Route::post('mentors', 'MentorController@create');
+Route::put('mentors/{id}', 'MentorController@update');
+Route::delete('mentors/{id}', 'MentorController@destroy');
+
+Route::get('courses', 'CourseController@index');
+Route::get('courses/{id}', 'CourseController@show');
+Route::post('courses', 'CourseController@create');
+Route::put('courses/{id}', 'CourseController@update');
+Route::delete('courses/{id}', 'CourseController@destroy');
+
+
+Route::post('chapter', 'ChapterController@create');
+Route::put('chapter/{id}', 'ChapterController@update');
+Route::get('chapter', 'ChapterController@index');
+Route::get('chapter/{id}', 'ChapterController@show');
+Route::delete('chapter/{id}', 'ChapterController@destroy');
+
+
+
+Route::post('lesson', 'LessonController@create');
+Route::put('lesson/{id}', 'LessonController@update');
+Route::get('lesson', 'LessonController@index');
