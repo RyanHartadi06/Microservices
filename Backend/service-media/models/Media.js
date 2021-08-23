@@ -1,5 +1,3 @@
-const { DataTypes } = require("sequelize/types");
-
 module.exports = (sequelize, DataTypes) => {
   const Media = sequelize.define(
     "Media",
@@ -16,12 +14,12 @@ module.exports = (sequelize, DataTypes) => {
       },
       createdAt: {
         field: "created_at",
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
         allowNull: false,
       },
       updatedAt: {
         field: "updated_at",
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
         allowNull: false,
       },
     },
